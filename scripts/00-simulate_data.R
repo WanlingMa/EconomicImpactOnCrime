@@ -1,11 +1,10 @@
 #### Preamble ####
-# Purpose: Simulates... 
+# Purpose: Simulates the income and crime count data in different neighbourhoods
 # Author: Wanling Ma 
-# Date: January 23rd, 2024
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Date: 24 January 2024
+# Contact: wanling.ma@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: dplyr and tidyverse are installed
 
 
 #### Workspace setup ####
