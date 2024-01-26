@@ -44,7 +44,6 @@ The findings of this study are pivotal in extending our knowledge of urban crime
 
 In detailing our journey, the paper is structured as follows: We begin with an in-depth methodology section, outlining our data collection and analysis approach. This is followed by the presentation of our findings, discussing the implications of these results. Finally, we conclude with practical recommendations for policymakers and suggestions for future research in this vital field.
 
-
 # 3. Data
 
 ```{r, message=FALSE, warning=FALSE, echo = FALSE}
@@ -112,11 +111,13 @@ ggplot(data_long, aes(x = factor(HOOD_ID), y = Rate, fill = Crime_Type)) +
 
 ```
 
-## 3.2 Data Analaysis
+The bar graphs illustrate substantial disparities in crime rates across different neighborhoods, prompting a critical inquiry into the underlying factors contributing to this phenomenon and seeking preventive measures to mitigate future occurrences of criminal activities.
 
-### 3.2.1 Data Analysis Methodology
+## 3.3 Data Analaysis
 
-#### 3.2.1.1 Correlation Matrix
+### 3.3.1 Data Analysis Methodology
+
+#### 3.3.1.1 Correlation Matrix
 
 A correlation matrix is an organized representation of the correlation coefficients between a set of variables. In essence, it is a table where each element quantifies the degree to which two variables share a linear relationship.
 
@@ -130,8 +131,7 @@ However, while a correlation matrix can be revealing, it is imperative to rememb
 
 In summary, a correlation matrix is a powerful statistical tool that provides initial insights into potential relationships between variables, necessitating cautious interpretation and subsequent in-depth investigation to uncover the underlying causal mechanisms.
 
-
-### 3.2.2 Analysis 1: Crime Rate vs. Education Attainment
+### 3.3.2 Analysis 1: Crime Rate vs. Education Attainment
 
 In this analysis, we investigate the hypothesis that educational attainment and field of study are key factors influencing neighborhood crime rates in 2015. Using data from Toronto Open Data Portal, we compare various educational levels and majors against crime rates, employing a correlation matrix and heatmap visualization to identify potential correlations. This approach seeks to uncover whether education plays a significant role in the dynamics of neighborhood crime.
 
@@ -150,7 +150,7 @@ kable(head(education_level_crime_rate_data[1:3]))
 kable(head(education_level_crime_rate_data[11:13]))
 ```
 
-#### 3.2.2.1 Data Visualization
+#### 3.3.2.1 Data Visualization
 
 We then used cor() function to create a correlation matrix to quickly determine whether or not some specific crimes rate have correlation to the education levels that each individual in the neighbourhood acquired [@R-base]. And then we use ggplot2 library to generate a heatmap to provide an elegant and efficient data visualization [@R-ggplot2].
 
@@ -174,9 +174,7 @@ ggsave("heatmap.png", plot = p, width = 10, height = 8)
 
 ```
 
-
-
-#### 3.2.2.2 Implication
+#### 3.3.2.2 Implication
 
 From the Figure \ref{fig:figure1}, we observe some interesting data points from the correlation matrix.
 
@@ -186,7 +184,7 @@ The correlation coefficient between Bike theft Rate and Earned Doctorate is rela
 
 2.  Decrease in Crime Rates with Higher Education Levels:
 
-As education levels rise, crime rates tend to fall, likely due to improved employment prospects and income levels, which reduce economic incentives for crime. Additionally, neighborhoods with more educated residents may experience enhanced community engagement and social cohesion, contributing to a safer environment. 
+As education levels rise, crime rates tend to fall, likely due to improved employment prospects and income levels, which reduce economic incentives for crime. Additionally, neighborhoods with more educated residents may experience enhanced community engagement and social cohesion, contributing to a safer environment.
 
 Our observation of the negative correlation between higher education levels and crime rates is echoed in the study by Dr Muhammad Ramzan Sheikh et al., which identifies education level as a key factor influencing crime rates in Multan District Prison, Pakistan. This finding strengthens our argument about the critical role of education in shaping crime dynamics [@sheikh2022identifying].
 
@@ -195,7 +193,8 @@ Our observation of the negative correlation between higher education levels and 
 People who gets the Bachelor's degrees or above would significantly contribute to the decrease of shooting case in a neighbourhood, which could be summarized from the correlation matrix. The negative correlation between higher education and shootings suggests that areas with a larger proportion of residents holding at least a Bachelor's degree may enjoy more robust community resources and higher levels of civic involvement, which can lead to better crime prevention and intervention efforts.
 
 \newpage
-### 3.2.3 Analysis 2: Crime Rate vs. Major Field of Study
+
+### 3.3.3 Analysis 2: Crime Rate vs. Major Field of Study
 
 We first compare various crime rates versus some popular field of study:
 
@@ -212,7 +211,7 @@ kable(head(major_crime_rate_data[1:3]))
 kable(head(major_crime_rate_data[11:13]))
 ```
 
-#### 3.2.3.1 Data Visualization
+#### 3.3.3.1 Data Visualization
 
 A correlation matrix is calculated to quickly determine whether or not some specific crimes rate have correlation to the major of study that each individual in the neighbourhood focus using cor() function [@R-base]:
 
@@ -236,8 +235,7 @@ ggsave("heatmap1.png", plot = p, width = 10, height = 8)
 
 ```
 
-
-#### 3.2.3.2 Implication
+#### 3.3.3.2 Implication
 
 From the Figure \ref{fig:figure2}, we observe some interesting data points from the correlation matrix.
 
@@ -250,7 +248,8 @@ The correlation between auto theft and the field of Mechanic and Precision Produ
 The positive correlation with break-and-enter crimes and Communication and Journalism majors may suggest that these areas, often associated with active, bustling urban campuses, may also be more attractive targets for such crimes due to higher concentrations of valuable electronics and equipment used in communication and media studies. Students and facilities may possess more items that are easily resold, such as cameras, audio equipment, and computers, potentially making them more likely targets for thefts.
 
 \newpage
-### 3.2.4 Analysis 3: Crime Rate vs. Household After-Tax Income
+
+### 3.3.4 Analysis 3: Crime Rate vs. Household After-Tax Income
 
 We first compare various crime rates versus various income levels:
 
@@ -267,7 +266,7 @@ kable(head(income_crime_rate_data[1:3]))
 kable(head(income_crime_rate_data[11:13]))
 ```
 
-#### 3.2.4.1 Data Visualization
+#### 3.3.4.1 Data Visualization
 
 We then used a correlation matrix to quickly determine whether or not some specific crimes rate have correlation to various income levels:
 
@@ -291,7 +290,7 @@ ggsave("heatmap2.png", plot = p, width = 10, height = 8)
 
 ```
 
-#### 3.2.4.2 Implication
+#### 3.3.4.2 Implication
 
 From the Figure \ref{fig:figure3}, we made some interesting observations as follow:
 
@@ -336,8 +335,6 @@ cat('\\end{landscape}')
 cat('\\clearpage')
 ```
 
-
-
 \newpage
 
 # 4. Limitations
@@ -381,6 +378,7 @@ A pivotal next step in this area of research involves conducting a longitudinal 
 Another crucial step forward would be to undertake a comparative analysis across different urban settings. By analyzing and contrasting cities with varying socio-economic landscapes, cultural backgrounds, and policy frameworks, researchers can gain a more comprehensive understanding of the interplay between socio-economic factors and crime. This comparative approach would not only enhance the generalizability of the findings but also illuminate the specific conditions under which certain socio-economic factors become more influential in shaping crime dynamics. Such a study would significantly contribute to the development of tailored and effective urban policies and crime prevention strategies, catering to the unique needs and challenges of diverse urban communities.
 
 \newpage
+
 # 7. Appendix:
 
 ## 7.1 Data Cleaning:
@@ -402,5 +400,7 @@ To integrate the two data sets, we performed a left-join operation using the Nei
 ### 7.5 Handling Missing Data:
 
 In the process of merging and analyzing the datasets, we encountered instances of missing data (NA fields). To maintain the integrity and reliability of our analysis, we chose to omit these NA fields. This decision ensures that our findings and conclusions are based solely on complete and accurate data, thereby enhancing the validity of our study.
+
+\newpage
 
 # 8. References
