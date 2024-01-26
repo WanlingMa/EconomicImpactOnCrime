@@ -26,9 +26,10 @@ install.packages("ggplot2")
 install.packages("tidyr")
 ```
 
-2. Run the script 'scripts/00-simulate_data.R' first to simulate the data
-3. Run the script 'scripts/01-download_data.R' to download the necessary data
-4. Render the EconomicAndEducationInpacctOnCrime.qmd to generate the required paper
+2. Run the script 'scripts/00-simulate_data.R' first to simulate the data.
+3. Run the script 'scripts/01-download_data.R' to download the necessary data.
+    - Note that if downloading the data is not possible, then please skip this step as the raw data is already in the github repo. This script is meant for reproducibility.
+4. Render the EconomicAndEducationInpacctOnCrime.qmd to generate the required paper.
 
 ## Statement on LLM usage:
 The abstract, introduction, conclusion were written with the help of ChatHorse and the entire chat history is available in inputs/llms/usage.txt.
