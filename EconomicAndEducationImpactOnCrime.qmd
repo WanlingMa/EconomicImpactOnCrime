@@ -32,13 +32,15 @@ library(tidyr)
 
 # 1. Acknowledgments
 
-The source code and data for this report are available on GitHub at [link](https://github.com/WanlingMa/EconomicImpactOnCrime.git).
+The source code and data for this report are available on GitHub at [link](https://github.com/WanlingMa/EconomicImpactOnCrime.git).[^1]
+
+[^1]: Github link: https://github.com/WanlingMa/EconomicImpactOnCrime.git
 
 # 2. Introduction
 
 In the ever-evolving landscape of urban development and public safety, the intricate relationship between socio-economic factors and crime rates stands as a critical area of study. Recent studies, such as the one conducted by @cai2021analysis, have highlighted the profound impact of socio-economic factors, including median household income, income inequality, and unemployment rates, on hate crime rates in the United States. This paper delves into the depths of this complex interaction, focusing specifically on the influence of income levels and educational attainment on neighborhood crime rates in Toronto. Amidst growing concerns about urban safety, this research addresses a significant gap in our understanding of how varied socio-economic backgrounds can shape crime dynamics within city environments.
 
-Our investigation utilizes comprehensive data sets from the City of Toronto, including the "Neighborhood Crime Rates" and "Neighbourhood Profiles", to explore the correlations between economic circumstances, educational backgrounds, and crime occurrences. This analysis, grounded in 2015 and 2016 data, reveals insightful patterns and correlations, particularly highlighting the nuanced role of income and education in the context of neighborhood crime rates. We observe, for instance, a notable negative correlation between higher income brackets and shooting crime rates, and intriguing associations between educational levels and specific crime types.
+Our investigation utilizes comprehensive data sets from the City of Toronto, including the "Neighborhood Crime Rates" and "Neighbourhood Profiles", to explore the correlations between economic circumstances, educational backgrounds, and crime occurrences. This analysis, grounded in 2015 and 2016 data, reveals insightful patterns and correlations, particularly highlighting the nuanced role of education (Section [3.3.2 Analysis 1: Crime Rate vs. Education Attainment] and Section [3.3.3 Analysis 2: Crime Rate vs. Major Field of Study]) and household income level (Section [3.3.4 Analysis 3: Crime Rate vs. Household After-Tax Income]) in the context of neighborhood crime rates. We observe, for instance, a notable negative correlation between higher income brackets and shooting crime rates, and intriguing associations between educational levels and specific crime types.
 
 The findings of this study are pivotal in extending our knowledge of urban crime dynamics. They challenge preconceived notions about socio-economic influences on crime and offer essential insights for policymakers and community leaders. This research underscores the necessity of considering economic and educational factors in crafting effective strategies to reduce crime and enhance public safety in diverse urban settings.
 
@@ -364,6 +366,8 @@ Thirdly, the research highlighted a notable negative correlation between higher 
 Lastly, the analysis brought to light a compelling connection between lower household incomes and higher crime rates. This correlation is particularly stark, suggesting that economic hardships and limited financial resources are key drivers of criminal activity. This insight is crucial for understanding the broader socio-economic underpinnings of crime in urban settings and highlights the need for targeted economic interventions to address the root causes of crime in lower-income neighborhoods.
 
 In conclusion, this study offers a comprehensive and detailed examination of the role of socio-economic factors, particularly education and income, in shaping neighborhood-level crime dynamics, aligning with international research like P. Boxer et al.'s work on the connection between neighborhood crime and academic performance [@boxer2020neighborhood]. These findings not only deepen our understanding of urban crime but also provide valuable guidance for policymakers in crafting informed and effective strategies for crime prevention and community development, underscoring the importance of socio-economic stability in fostering safer communities.
+
+\newpage 
 
 # 6. Furthur steps
 
