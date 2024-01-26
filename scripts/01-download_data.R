@@ -38,7 +38,6 @@ neighbour_data <- filter(neighbour_datastore_resources, row_number()==1) %>% get
 
 
 #### Save data ####
-# [...UPDATE THIS...]
 # change the_raw_data to whatever name you assigned when you downloaded it.
 write_csv(crime_rate_data, "inputs/data/crime_rate_raw_data.csv") 
 write_csv(neighbour_data, "inputs/data/neighbour_raw_data.csv")
