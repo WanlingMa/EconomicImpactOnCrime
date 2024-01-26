@@ -154,7 +154,7 @@ kable(head(education_level_crime_rate_data[11:13]))
 
 #### 3.3.2.1 Data Visualization
 
-We then used cor() function to create a correlation matrix to quickly determine whether or not some specific crimes rate have correlation to the education levels that each individual in the neighbourhood acquired [@R-base]. And then we use ggplot2 library to generate a heatmap to provide an elegant and efficient data visualization [@R-ggplot2].
+We used cor() function to create a correlation matrix to quickly determine whether or not some specific crimes rate have correlation to the education levels that each individual in the neighbourhood acquired [@R-base]. And then we use ggplot2 library to generate a heatmap to provide an elegant and efficient data visualization [@R-ggplot2]. The heat map can be found as Figure \ref{fig:figure1}. 
 
 ```{r}
 cor_mat <- round(cor(education_level_crime_rate_data[1:10], education_level_crime_rate_data[11:21]), digits = 2)
@@ -198,7 +198,7 @@ People who gets the Bachelor's degrees or above would significantly contribute t
 
 ### 3.3.3 Analysis 2: Crime Rate vs. Major Field of Study
 
-We first compare various crime rates versus some popular field of study:
+Next, we compare various crime rates versus some popular field of study:
 
 ```{r, echo = FALSE}
 target_rows = c(1741, 1767, 1769, 1749, 1778, 1779, 1751, 1784)
@@ -215,7 +215,7 @@ kable(head(major_crime_rate_data[11:13]))
 
 #### 3.3.3.1 Data Visualization
 
-A correlation matrix is calculated to quickly determine whether or not some specific crimes rate have correlation to the major of study that each individual in the neighbourhood focus using cor() function [@R-base]:
+A correlation matrix is calculated to quickly determine whether or not some specific crimes rate have correlation to the major of study that each individual in the neighbourhood focus using cor() function [@R-base]. Then, we use ggplot2 to visualize the correlation matrix [@R-ggplot2]. The data visualization can be found as Figure \ref{fig:figure2}.
 
 ```{r}
 cor_mat <- round(cor(major_crime_rate_data[1:10], major_crime_rate_data[11:18]), digits = 2)
@@ -253,7 +253,7 @@ The positive correlation with break-and-enter crimes and Communication and Journ
 
 ### 3.3.4 Analysis 3: Crime Rate vs. Household After-Tax Income
 
-We first compare various crime rates versus various income levels:
+Lastly, we want to see if the household after-tax income would have positive correlation to the Crime rate. Therefore, we compare various crime rates versus various income levels:
 
 ```{r, echo = FALSE}
 target_rows = c(1056:1071)
@@ -270,7 +270,7 @@ kable(head(income_crime_rate_data[11:13]))
 
 #### 3.3.4.1 Data Visualization
 
-We then used a correlation matrix to quickly determine whether or not some specific crimes rate have correlation to various income levels:
+We used a correlation matrix to quickly determine whether or not some specific crimes rate have correlation to various income levels. We used ggplot2 to visualize the correlation matrix as a heat map, which can be found as Figure \ref{fig:figure3}.
 
 ```{r}
 cor_mat <- round(cor(income_crime_rate_data[1:10], income_crime_rate_data[11:26]), digits = 2)
@@ -367,7 +367,7 @@ Lastly, the analysis brought to light a compelling connection between lower hous
 
 In conclusion, this study offers a comprehensive and detailed examination of the role of socio-economic factors, particularly education and income, in shaping neighborhood-level crime dynamics, aligning with international research like P. Boxer et al.'s work on the connection between neighborhood crime and academic performance [@boxer2020neighborhood]. These findings not only deepen our understanding of urban crime but also provide valuable guidance for policymakers in crafting informed and effective strategies for crime prevention and community development, underscoring the importance of socio-economic stability in fostering safer communities.
 
-\newpage 
+\newpage
 
 # 6. Furthur steps
 
